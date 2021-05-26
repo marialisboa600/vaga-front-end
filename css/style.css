@@ -2,7 +2,7 @@ html,body {
     padding: 0;
     margin: 0;
 }
-.c-contact {
+.m-contact {
     background-color: blue;
     display: flex;
     justify-content: center;
@@ -13,14 +13,14 @@ html,body {
     padding-right: 5px;
 }
 
-.c-contact__number {
+.m-contact__number {
     width: 80%;
     max-width: 894px;
     display: flex;
     justify-content: flex-end;
 }
 
-.c-header {
+.m-header {
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -29,25 +29,84 @@ html,body {
     align-items: center;
 }
 
-.c-navBar__list {
+.m-navBar__list {
     display: flex;
     justify-content: space-around;
 }
 
-.c-navBar__item {
+.m-navBar__item {
     list-style: none;
     margin: 5px;
 }
 
-.c-slider {
+.m-slider {
     background-color: rgb(153, 153, 153);
     height: 290px;
     width: 100%;
 }
 
-.c-slider__thumb {
+.m-slider__thumb {
     max-width: 894px;
     width: 80%;
     margin: auto;
     height: 290px;
 }
+
+.m-description {
+    max-width: 894px;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.m-description__image {
+    width: 325px;
+    height: 212px;
+}
+
+.m-boxes {
+    max-width: 894px;
+    width: 80%;
+    margin: auto;
+}
+
+.m-boxe__images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.m-boxe__article {
+    display: flex;
+    flex-direction: column;
+}
+
+.m-boxes__image {
+    width: 196px;
+    height: 163px;
+}
+
+.m-footer {
+    background-color: rgb(75, 73, 73);
+    width: 100%;
+    margin: auto;
+    height: 100px;
+}
+
+.m-footer__nav {
+    max-width: 894px;
+    width: 80%;
+    margin: auto;
+}
+
+.m-footer__list {
+    display: flex;
+    justify-content: center;
+}
+
+.m-footer__item {
+    list-style: none;
+    margin: 10px ;
+}
+
