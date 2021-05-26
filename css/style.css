@@ -1,9 +1,13 @@
-@import url('../Oswald/Oswald/Oswald-VariableFont_wght.ttf');
+@import url('../fonts/Oswald/Oswald-VariableFont_wght.ttf');
 html,body {
     padding: 0;
     margin: 0;
-   
 }
+
+ul {
+    padding-inline-start:0;
+}
+
 .m-contact {
     background-color: rgb(6 5 47 / 98%);
     display: flex;
@@ -16,8 +20,7 @@ html,body {
 }
 
 .m-contact__number {
-    width: 80%;
-    max-width: 894px;
+    width: 894px;
     display: flex;
     justify-content: flex-end;
 }
@@ -29,43 +32,118 @@ html,body {
 .m-header {
     display: flex;
     justify-content: space-between;
-    width: 80%;
-    max-width: 894px;
+    align-items: baseline;
+    width: 894px;
     margin: auto;
-    align-items: center;
     cursor: pointer;
 }
 
 .m-navBar__list {
-    display: flex;
-    justify-content: space-around;
+    display: flex;  
 }
 
 .m-navBar__item {
     list-style: none;
-    margin: 5px;
+    margin-left: 10px;
     font-family: 'Lato', sans-serif;
     font-family: 'Oswald', sans-serif;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
 
+.m-navBar__dropdow {
+    position: relative;
+}
+
+.m-navBar__dropdow:hover .m-navBar__subMenu__ul {
+    display: block;
+}
+
+.m-navBar__subMenu__ul {
+    position: absolute;
+    left: 0;
+    display: none;
+    list-style: none;
+    width: 100px;
+    height: 60px;
+    background-color:  #090c67cc;
+    z-index: 10;
+}
+
+.m-navBar__subMenu__li:hover {
+    background-color: rgb(39, 39, 38);
+}
+
+.m-navBar__subMenu__li {
+   width: 100%;
+   height: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
+
+.m-navBar__subMenu__ul a {
+   text-decoration: none;
+   color: white;
+}
+  
+.m-navBar__2subMenu__ul {
+    position: absolute;
+    left: 100px;
+    top: 30px;
+    display: none;
+    list-style: none;
+    width: 100px;
+    height: 60px;
+    background-color: #090c67cc;
+}
+
+.m-navBar__parceiros:hover .m-navBar__2subMenu__ul {
+    display: block;
+}
+
+.m-navBar__2subMenu__ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.m-navBar__2subMenu__li:hover {
+    background-color: rgb(39, 39, 38);
+}
+
+.m-navBar__2subMenu__li {
+   width: 100%;
+   height: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
+
+.m-navBar__2subMenu__ul a {
+   text-decoration: none;
+   color: white;
+} 
+
 .m-slider {
     background-color: rgb(6 5 47 / 98%);
     height: 290px;
     width: 100%;
+    position: relative;
+}
+
+.m-slider__image {
+    width: 894px; 
+    height: 290px;
 }
 
 .m-slider__thumb {
-    max-width: 894px;
-    width: 80%;
+    width: 894px; 
     margin: auto;
     height: 290px;
 }
 
 .m-description {
-    max-width: 894px;
-    width: 80%;
+    width: 894px;
     display: flex;
     margin: auto;
     justify-content: space-between;
@@ -89,6 +167,7 @@ html,body {
     font-size: 1em;
     font-weight: bold;
 }
+
 .m-description__image {
     width: 325px;
     height: 212px;
@@ -96,8 +175,7 @@ html,body {
 }
 
 .m-boxes {
-    max-width: 894px;
-    width: 80%;
+    width: 894px;
     margin: auto;
     font-family: 'Oswald', sans-serif;
 }
@@ -119,8 +197,7 @@ html,body {
     border-radius: 10px;
     color: #040342;
     font-weight: bold;
-    font-family: 'Oswald', sans-serif;
-   
+    font-family: 'Oswald', sans-serif;  
 }
 
 .m-boxes__image {
@@ -129,15 +206,14 @@ html,body {
     border-radius: 10px 10px 0px 0;
 }
 
-.m-boxe__paragraph{
+.m-boxe__paragraph {
     font-size: 1.1em;
     font-weight: bolder;
     background-color: #090c67a3;
     margin-top: -20px;
     width: 100%;
     color: white;
-    text-align: center;
-  
+    text-align: center; 
 }
 
 .m-boxe__btn {
@@ -151,8 +227,7 @@ html,body {
     border-radius: 3px;
     color: white;
     margin-bottom: 15px;
-    box-shadow: 4px 5px 3px 0px #777373;
-   
+    box-shadow: 4px 5px 3px 0px #777373;  
 }
 
 .m-footer {
@@ -166,8 +241,7 @@ html,body {
 }
 
 .m-footer__nav {
-    max-width: 894px;
-    width: 80%;
+    width: 894px;
     margin: auto;
 }
 
@@ -178,9 +252,7 @@ html,body {
 
 .m-footer__item {
     list-style: none;
-    margin: 10px ;
+    margin-top: 10px ;
     cursor: pointer;
+    padding: 10px;
 }
-
-
-

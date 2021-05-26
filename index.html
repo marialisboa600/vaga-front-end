@@ -5,20 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   
     <link rel="stylesheet" href="./css/nivo-slider.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./themes/default/default.css">
 </head>
 <body>
     <section class="m-contact"><article class="m-contact__number">11 1234-1234 11 1234-1234</article></section>
     <header class="m-header">
-        <section class="m-logo"><img src="/images/dev7logo.png" alt="logo"></section>
+        <section class="m-logo"><img src="./images/dev7logo.png" alt="logo"></section>
         <nav class="m-navBar">
             <ul class="m-navBar__list">
                 <li class="m-navBar__item">
                     <a>HOME</a>
                 </li>
-                <li class="m-navBar__item">
+                <li class="m-navBar__item m-navBar__dropdow">
                     <a>EMPRESA</a>
+                    <ul class="m-navBar__subMenu__ul">
+                        <li class="m-navBar__subMenu__li"><a href="#">História</a></li>
+                        <li class="m-navBar__subMenu__li m-navBar__parceiros"><a href="#">Inovação</a>
+                            <ul class="m-navBar__2subMenu__ul">
+                                <li class="m-navBar__2subMenu__li"><a href="#">Princípios</a></li>
+                                <li class="m-navBar__2subMenu__li"><a href="#">Futuro</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
                 <li class="m-navBar__item">
                     <a>CLIENTES</a>
@@ -30,22 +43,19 @@
         </nav>
     </header>
     <main>
-        <section class="m-slider">
-            <article id="slider" class="nivoSlider m-slider__thumb">
-                <img src="./images/toystory.jpg" alt="toystory" data-thumb="./images/toystory.jpg">
-                <img src="./images/nemo.jpg" alt="nemo" data-thumb="./images/nemo.jpg">
-                <img src="./images/up.jpg" alt="up" data-thumb="./images/up.jpg">
-                <img src="./images/walle.jpg" alt="walle" data-thumb="./images/walle.jpg">
+        <section class="m-slider theme-default">
+            <article id="slider" class="nivoSlider m-slider__thumb" >
+                <img class="m-slider__image" src="./images/toystory.jpg" alt="toystory" data-thumb="./images/toystory.jpg">
+                <img class="m-slider__image" src="./images/up.jpg" alt="up" data-thumb="./images/up.jpg">
             </article>
         </section>
         <section class="m-description">
             <article>
                 <h1 class="m-description__h1">Procurando Nemo</h1>
-                <h5> Animação, Aventura, Fantasia, 4 de julho de 2003 - 1h 41min .</h5>
+                <h2 class="m-description__h2"> Animação - 1h 41min .</h2>
                 <ul>
                     <li class="m-description__item"><span class="m-description__span">Direção:</span> Andrew Stanton, Lee Unkrich</li>
                     <li class="m-description__item"><span class="m-description__span">Roteiro:</span> Andrew Stanton, Bob Peterson</li>
-                    <li class="m-description__item"><span class="m-description__span">Elenco:</span> Albert Brooks, Ellen DeGeneres, Alexander Gould</li>
                 </ul>
             </article>
             <aside class="m-description__aside">
@@ -54,7 +64,7 @@
         </section>
         <section class="m-boxes">
             <article class="m-boxe__title">
-                <h1>FILMES EM DESTAQUES</h1>
+                <h2 class="m-boxe__h2">FILMES EM DESTAQUES</h2>
             </article>
             <section class="m-boxe__images">
                 <article class="m-boxe__article">
@@ -107,7 +117,7 @@
 <script src="./scripts/jquery.nivo.slider.js"></script>
 <script type="text/javascript">
     $(window).load(function() {
-        $('#slider').nivoSlider();   
-    }); 
-</script>
+        $('#slider').nivoSlider();
+    });
+</script>   
 </html>
