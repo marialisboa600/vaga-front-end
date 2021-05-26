@@ -1,9 +1,11 @@
+@import url('../Oswald/Oswald/Oswald-VariableFont_wght.ttf');
 html,body {
     padding: 0;
     margin: 0;
+   
 }
 .m-contact {
-    background-color: blue;
+    background-color: rgb(6 5 47 / 98%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,10 +39,14 @@ html,body {
 .m-navBar__item {
     list-style: none;
     margin: 5px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
 }
 
 .m-slider {
-    background-color: rgb(153, 153, 153);
+    background-color: rgb(6 5 47 / 98%);
     height: 290px;
     width: 100%;
 }
@@ -59,17 +65,40 @@ html,body {
     margin: auto;
     justify-content: space-between;
     margin-top: 20px;
+    font-family: 'Oswald', sans-serif;
 }
 
+.m-description__h1 {
+    font-size: 1.5em;
+    font-weight: bold;  
+}
+
+.m-description__item {
+    font-size: 0.8em;
+    font-weight: 300;
+    list-style: none;
+    margin-bottom:5px ; 
+}
+
+.m-description__span {
+    font-size: 1em;
+    font-weight: bold;
+}
 .m-description__image {
     width: 325px;
     height: 212px;
+    border-radius: 10px;
 }
 
 .m-boxes {
     max-width: 894px;
     width: 80%;
     margin: auto;
+    font-family: 'Oswald', sans-serif;
+}
+
+.m-boxe__title {
+    font-weight: bold;  
 }
 
 .m-boxe__images {
@@ -80,18 +109,55 @@ html,body {
 .m-boxe__article {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: #f5e961;
+    border-radius: 10px;
+    color: #040342;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+   
 }
 
 .m-boxes__image {
     width: 196px;
     height: 163px;
+    border-radius: 10px 10px 0px 0;
+}
+
+.m-boxe__paragraph{
+    font-size: 1.1em;
+    font-weight: bolder;
+    background-color: #090c67a3;
+    margin-top: -20px;
+    width: 100%;
+    color: white;
+    text-align: center;
+  
+}
+
+.m-boxe__btn {
+    text-decoration: none;
+    background-color: #2196f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+    color: white;
+    margin-bottom: 15px;
+    box-shadow: 4px 5px 3px 0px #777373;
+   
 }
 
 .m-footer {
-    background-color: rgb(75, 73, 73);
+    background-color: rgb(6 5 47 / 98%);
     width: 100%;
     margin: auto;
     height: 100px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: white;
 }
 
 .m-footer__nav {
@@ -109,4 +175,6 @@ html,body {
     list-style: none;
     margin: 10px ;
 }
+
+
 
