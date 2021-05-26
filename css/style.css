@@ -22,6 +22,10 @@ html,body {
     justify-content: flex-end;
 }
 
+.m-logo {
+    padding-top: 10px;
+}
+
 .m-header {
     display: flex;
     justify-content: space-between;
@@ -29,6 +33,7 @@ html,body {
     max-width: 894px;
     margin: auto;
     align-items: center;
+    cursor: pointer;
 }
 
 .m-navBar__list {
@@ -174,6 +179,7 @@ html,body {
 .m-footer__item {
     list-style: none;
     margin: 10px ;
+    cursor: pointer;
 }
 
 
