@@ -54,6 +54,16 @@
         text-align: center;
     }
 
+    .m-boxe__images {
+        width: 100%;
+        flex-wrap:wrap;
+        justify-content: space-around;
+    }
+
+    .m-boxe__article {
+        margin-top: 10px;
+    }
+
    .m-footer {
        margin-top: 10px;
     }
@@ -68,15 +78,4 @@
         padding-inline-start: 0;
         justify-content: center;
     }
-
-    .m-boxe__images {
-        width: 100%;
-        flex-wrap:wrap;
-        justify-content: space-around;
-    }
-
-    .m-boxe__article {
-        margin-top: 10px;
-    }
-
 }
