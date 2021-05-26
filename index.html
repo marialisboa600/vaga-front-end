@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/projectstyle.css">
     <link rel="stylesheet" href="./css/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <section class="c-contact"><article class="c-contact__number">11 1234-1234 11 1234-1234</article></section>
@@ -31,10 +31,12 @@
     </header>
     <main>
         <section class="c-slider">
-            <div class="slider-wrapper theme-default">
-                <div id="slider" class="nivoSlider"> <img src="./images/toystory.jpg" data-thumb="./images/toystory.jpg" alt="" /> <a href="http://dev7studios.com"><img src="demo/images/up.jpg" data-thumb="demo/images/up.jpg" alt="" title="This is an example of a caption" /></a> <img src="demo/images/walle.jpg" data-thumb="demo/images/walle.jpg" alt="" data-transition="slideInLeft" /> <img src="demo/images/nemo.jpg" data-thumb="demo/images/nemo.jpg" alt="" title="#htmlcaption" /> </div>
-                <div id="htmlcaption" class="nivo-html-caption"> <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. </div>
-                </div>
+            <article id="slider" class="nivoSlider c-slider__thumb">
+                <img src="./images/toystory.jpg" alt="toystory" data-thumb="./images/toystory.jpg">
+                <img src="./images/nemo.jpg" alt="nemo" data-thumb="./images/nemo.jpg">
+                <img src="./images/up.jpg" alt="up" data-thumb="./images/up.jpg">
+                <img src="./images/walle.jpg" alt="walle" data-thumb="./images/walle.jpg">
+            </article>
         </section>
         <section class="c-text">
 
@@ -62,4 +64,11 @@
         </nav>
     </footer> -->
 </body>
+<script src="./scripts/jquery-1.7.1.min.js"></script>
+<script src="./scripts/jquery.nivo.slider.js"></script>
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();   
+    }); 
+</script>
 </html>
